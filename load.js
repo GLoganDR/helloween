@@ -3,12 +3,12 @@ var loadState = {
     //load player spritesheet, x and x images
     //sounds
     //make
-    game.load.image('helloween', '/img/helloween.png');
-    game.load.image('bullet', '/img/pumpkinbomb.png');
-    game.load.spritesheet('cthulu', '/img/cthulu.png', 64, 64);
-    game.load.spritesheet('mummy', '/img/mummy.png', 80, 80);
-    game.load.spritesheet('jack', '/img/jack2.png', 80, 93);
-    game.load.spritesheet('oogie', '/img/boss.png', 100, 96);
+    game.load.image('helloween', 'img/helloween.png');
+    game.load.image('bullet', 'img/pumpkinbomb.png');
+    game.load.spritesheet('cthulu', 'img/cthulu.png', 64, 64);
+    game.load.spritesheet('mummy', 'img/mummy.png', 80, 80);
+    game.load.spritesheet('jack', 'img/jack2.png', 80, 93);
+    game.load.spritesheet('oogie', 'img/boss.png', 100, 96);
     //Game Sound
     game.load.audio('ls1', 'assets/audio/03 This Is Halloween - Danny Elfman.mp3', 'assets/audio/03_This_Is_Halloween_-_Danny_Elfman.ogg');
     //Game Sound lvl 2
@@ -33,9 +33,9 @@ var loadState = {
     game.load.tilemap('boss', 'assets/tilemaps/boss.json', null, Phaser.Tilemap.TILED_JSON);
     game.load.image('level1', 'assets/tilemaps/cybernoid.png', 16, 16);
     game.load.image('level2', 'assets/tilemaps/cybernoid.png', 16, 16);
-    game.load.image('key', '/img/key-clipart-key.png');
-    game.load.image('door', '/img/Door.png');
-    game.load.image('death', '/img/Solid_black.png');
+    game.load.image('key', 'img/key-clipart-key.png');
+    game.load.image('door', 'img/Door.png');
+    game.load.image('death', 'img/Solid_black.png');
   },
 
   create: function(){

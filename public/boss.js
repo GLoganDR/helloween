@@ -22,7 +22,6 @@ var finalBoss = {
 
     layer.resizeWorld();
 
-
     //draw player
     player = game.add.sprite(793, 350, 'jack');
     player.width = 40;
@@ -39,7 +38,6 @@ var finalBoss = {
     //player walking left and right animations
     player.animations.add('left', [5, 6, 7], 16, true);
     player.animations.add('right', [9, 10, 11], 16, true);
-
 
     //follow the player via camera
     game.camera.follow(player);
@@ -68,7 +66,6 @@ var finalBoss = {
     spaceKey.onDown.add(this.shoot, this);
 
   },
-
 
   update: function(){
     //game.physics.arcade.overlap(this.bullets, cthulus, this.killCthulu, null, this);
@@ -102,7 +99,8 @@ var finalBoss = {
     if(bossHealth <= 0){
       boss.kill();
       this.gameSound.stop();
-      game.state.start('menu');
+      game.state.start('win');
+      game.camera.reset();
     }
   },
 
@@ -116,7 +114,7 @@ var finalBoss = {
         this.gameSound.stop();
         this.deathSound = game.add.audio('death');
         this.deathSound.play();
-        game.state.start('menu');
+        game.state.restart();
       }
   },
 

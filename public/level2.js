@@ -43,7 +43,6 @@ var playState2 = {
     map.setCollision(64);
     //map.setCollisionB, 8etween(32, 47);
 
-
     score = 0;
 
     layer.resizeWorld();
@@ -188,7 +187,6 @@ var playState2 = {
       };
     }, this)
   },
-
 
   killPlayer: function(death, player){
     this.deathSound = game.add.audio('death');

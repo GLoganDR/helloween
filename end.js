@@ -18,6 +18,6 @@
 //  },
 //
 //  start: function(){
-//    this.game.state.start('boss');
+//    game.state.start('boss');
 //  }
 //};
